@@ -17,7 +17,8 @@ module alu (
             6'h02: y = a + b;       
             6'h03: y = a - b;        
             6'h04: y = a & b;       
-            6'h05: y = a | b;       
+            6'h05: y = a | b;   
+            // 06 dla fsm jako jump
             6'h07: begin wr = 0; st = 1; end   
             6'h08: y = m;            
             default: wr = 0;         
